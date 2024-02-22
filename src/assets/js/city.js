@@ -1,4 +1,4 @@
-let city = [
+let cities = [
   {
     id: 1,
     ref_id: 1103,
@@ -2971,4 +2971,8 @@ let city = [
   },
 ];
 
-export default city;
+export function getCitiesByProvinceId(provinceId) {
+  return cities.filter((city) => city.provinsi_id === provinceId);
+}
+
+export default cities;
